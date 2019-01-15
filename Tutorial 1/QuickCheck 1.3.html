@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>QuickCheck 1.3</title>
+    </head>
+
+    <body>
+        <p>        
+            <ol>
+                <li>Provide the code to mark the unordered listcontaining the items: Packers, Vikings,
+                    Bears, Lions.
+                </li>
+                <li>Provide the code to mark he following list of the top five most popular movies
+                    ranked in descending order according to IMDB. (5-1, Pulp Fiction, The Dark Knight,
+                    The godfather: Part II, The Godfather,
+                    The Shawshank Redemption)
+                </li>
+                <li>Describe the three HTML elemnts used in the description list.</li>
+                <li> Provide the code to create a navigation list for the following list items: Home,
+                    FAQ, Contact Us and pointing to the index.html, faq.html, and contacts.html files.
+                </li>
+                <li>Using the folder structure in figure 1-40, provide the relative path going from the 
+                    ct_about.html file to the ct_catering.html file.
+                </li>
+                <li>Provide the URL pointing to the element in the glossary.html file with the ID c_terms.
+                    Assume that the gossary.html file is in the same folder as the current page.
+                </li>
+                <li>Provide the URL to access the website at the address www.example.com/curbside over a secure
+                    connection. 
+                </li>
+                <li>Provide the URL for an email link to the address sajja@curbside.com with the subject line FYI</li>
+                <li>Provide the URL for a telephone link to the U.S. phone number 907-555-0002.</li>
+            </ol>
+        </p>
+        <p>
+            <ol>
+                <li>
+                    &lt;ul&gt;
+                        &lt;li&gt;Packers&lt;/li&gt;
+                        &lt;li&gt;Vikings&lt;/li&gt;
+                        &lt;li&gt;Bears&lt;/li&gt;
+                        &lt;li&gt;Lions&lt;/li&gt;
+                    &lt;/ul&gt;
+                    ==
+                    <ul>
+                            <li>Packers</li>
+                            <li>Vikings</li>
+                            <li>Bears</li>
+                            <li>Lions</li>
+                    </ul>
+                </li>
+                <li>
+                    &lt;ol&gt; &lt;&gt;
+                        &lt;li value = &quot;5&quot;&gt;Pulp Fiction&lt;/li&gt; 
+                        &lt;li value = &quot;4&quot;&gt;The Dark Knight&lt;/li&gt;
+                        &lt;li value = &quot;3&quot;&gt;TheGodfather: Part II&lt;/li&gt;
+                        &lt;li value = &quot;2&quot;&gt;The Godfather&lt;/li&gt;
+                        &lt;li value = &quot;1&quot;&gt;The Shawshank Redemption&lt;/li&gt;
+                    &lt;/ol&gt;
+                    ==
+                    <ol>
+                        <li value = "5">Pulp Fiction</li> 
+                        <li value = "4">The Dark Knight</li>
+                        <li value = "3">TheGodfather: Part II</li>
+                        <li value = "2">The Godfather</li>
+                        <li value = "1">The Shawshank Redemption</li>
+                    </ol>
+                </li>
+                <li>A description list is done by using three seperate tags. &lt;dl&gt; &lt;dt&gt; &lt;dd&gt;.
+                    The first stating that it is a description list. The second that this is the term you will be giving a 
+                    description for. And the third is stating that this is the description for the previous term.                 
+                </li>
+                <li>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href = "index.html">Home</a>
+                            </li>
+                            <li>
+                                    <a href = "faq.html">FAQ</a>
+                            </li>
+                            <li>
+                                    <a href = "contacts.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    ==
+                &lt;nav&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;
+                            &lt;a href = &quot;index.html&quot;&gt;Home&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                                &lt;a href = &quot;faq.html&quot;&gt;FAQ&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                                &lt;a href = &quot;contacts.html&quot;&gt;Contact Us&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/nav&gt;
+                </li>
+                <li>../catering/ct_catering.html</li>
+                <li>.glossary.html#c_terms</li>
+                <li>https/www.example.com/curbside (it didn't ask for a link...)</li>
+                <li>&lt;a href = &quot;mailto: sajja@curbside.com&quot;?subject = &quot;FYI&quot;&gt;sajja@curbside.com&lt;/a&gt;
+                    == <a href = "mailto: sajja@curbside.com"?subject = "FYI">sajja@curbside.com</a>
+                </li>
+                <li>&lt;a href + &quot;tel: +19705550002&quot;&gt;(970)-555-0002&lt;/a&gt;
+                    == <a href + "tel: +19705550002">(970)-555-0002</a>
+                </li>
+            </ol>
+        </p>
+    </body>
+    <footer>
+        <p><b>This page is brought to you by Alysha Rogers, W0295377</b></p>
+        <p><i>p.s Love the sweaters. &hearts;</i></p>
+    </footer>
+</html>
