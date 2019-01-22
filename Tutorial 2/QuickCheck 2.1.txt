@@ -1,0 +1,34 @@
+Quick Check 2.1
+Alysha Rogers
+
+1. 
+	Inline Style = applied directly to an elemnt through the use of the style attribute
+in the elemnts tag. Meaning they apply to that element alone. 
+	Ebedded Style = Added to the head of an HTML doc, only apply to the doc in which they are 
+created, and are not accessible to docs in the website. Embedded AND Inline are not considered good practice
+because HTML should only describe the content and structure, not the style. 
+	External Sytle = A CSS file. It describes how a website should look and is linked to in the HTML file. This way the
+HTML file described the contents and structure of the site and the CSS file describes the site's style. 
+
+External styles are the best for designing an entire website.
+
+2. !important
+
+3. /*Tri and Succeed Sports Colour*/
+
+4. blockquote{
+	colour: rgb(255, 0, 0)
+}
+
+5. address {
+	background-color: hsl(90, 100%, 50%);
+}
+
+6. A technique in which old styles are listed and then new styles are listed aftewards. THis is so that a browser can adopt
+the most up-to date style it is able to support. 
+
+7. color: rgb(232, 121, 50);
+
+8. h1, h2{
+	background-colour: rgba(255, 255, 0, 0.7)
+}
