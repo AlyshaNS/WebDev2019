@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quick Check 2.2</title>
+        <meta Author = "Alysha Rogers"/>
+        <meta W# = "W0295377"/>
+        <meta Date = "20190123"/>
+        <link href ="QuickCheck styles.css" rel = "stylesheet"/>
+    </head>
+
+    <body>
+        <article>
+            <h1>Questions</h1>
+            <p>
+                <ol>
+                    <li>Provide a selector to math all address elements that are direct children
+                        of the footer element.
+                    </li>
+                    <li>The intiial h1 heading in a document has the ID <g>Top</g>. Provide a style 
+                    rule to display the text of this h1 heading in Century Gothic, Helvetica, or sans-serif 
+                    font. 
+                    </li>
+                    <li>For the following style rules, what is the font size of the h1 heading in pixels?
+                        <ul>
+                            <li>body {font-size: 16px;}</li>
+                            <li>body &gt; article {font-size: 0.75em;}</li>
+                            <li>body &gt; article &gt; h1 {font-size: 1.5em;}</li>
+                        </ul>
+                    </li>
+                    <li>Provide a style rule to set the size of body text to 2% of the veiwport width.     
+                    </li>
+                    <li>Provide a style rule to remove underlining from hypertext links marked with the &lt;a&gt; tag
+                        and nested within a navigation list. 
+                    </li>
+                    <li>Provide the @font-face rule to create a web font named Cantarell based on the font 
+                        files cantarell.woff and cantarell.tff. 
+                    </li>
+                    <li>Provide a style rule to display all blockquote elements belonging to the reviews 
+                        class in italic and idented 3em.
+                    </li>
+                    <li>Provide a style rule to horizontally center all h1 through h6 headings and to display 
+                        their text with normal weight.
+                    </li>
+                </ol>
+            </p>
+            <h1>Answers</h1>
+            <p>
+                <ol>
+                    <li>footer > address
+                    </li>
+                    <li>h1#top {font-family: 'Century Gothic', Helvetica, sans-serif:}
+                    </li>
+                    <li>18px
+                    </li>
+                    <li>body{font-size: 2vw;}
+                    </li>
+                    <li>nav a{text-decoration: none;} 
+                    </li>
+                    <li>@font-face{font-family:Cantarell;src:url(cantarell.woff) format('woff'), url(cantarell.tff)format('tff');}
+                    </li>
+                    <li>blockquote.Reviews{font-style:italic:text-indent:3em;}
+                    </li>
+                    <li>h1, h2, h3, h4, h5, h6 {text-align: center; font-weight: normal;}</li>
+                </ol>
+            </p>
+        </article>
+    </body>
+    <footer>
+        Brought to you by Alysha Rogers on <date>2019-01-23</date>
+    </footer>
+
+</html>

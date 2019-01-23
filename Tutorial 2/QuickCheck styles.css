@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+html{
+    background-color:rgba(109, 183, 243, 0.877);
+}
+body{
+    color:rgba(0, 0, 0, 0.856);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-size: 3em;
+    text-align: center;
+}
+
+ol > li{
+    line-height: 2em;
+}
+
+footer > date{
+    font-weight: bold;
+}
+
+li > g{
+    font-style: italic;
+}
