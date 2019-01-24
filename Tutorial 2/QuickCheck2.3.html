@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <title>Quick Check 2.3</title>
+    <meta Author = "Alysha Rogers"/>
+    <meta W# = "W0295377"/>
+    <meta Date = "20190123"/>
+    <link href ="QuickCheck styles.css" rel = "stylesheet"/>
+</head>
+    <body>
+        <h1>Questions</h1>
+        <article>
+            <p>
+                <ol>
+                    <li>Provide a style rule to display all unordered lists with lowercase letters as the 
+                        list markers.
+                    </li>
+                    <li>Provide a style rule to display all unordered lists using the star.png image file, placed
+                        inside a virtual box.
+                    </li>
+                    <li>Provide a sryle rule to display the text of all previously visited hypertext links in grey.
+                    </li>
+                    <li>Provide the style rule to set the padding around every h1 heading in a section element to 
+                        1em on top 0.5em on the left and right, and 2em on the bottom.
+                    </li>
+                    <li>Provide the style rule to change the left margin of the figure element to 20 pixels.
+                    </li>
+                    <li>Describe the item selected by the folowing selector;
+                        <p>#top > p:first-of-type:first-line</p>
+                    </li>
+                    <li>Describe the items selected by the following selector
+                        <p>div.Links imp[usemap]</p>
+                    </li>
+                    <li>Provide the style rule to insert the text string "***" before every paragraph belonging
+                        to the Review class.
+                    </li>
+                    <li>Provide the style property to set the opening quotation mark and closing quotation marks to curly
+                        quotes with unicode values of 2018 and 2019 respectively. 
+                    </li>
+                </ol>
+            </p>
+            <h1>Answers</h1>
+            <p>
+                <ol>
+                    <li>ul{list-style-type: lower-alpha;} 
+                    </li>
+                    <li>ul {list-style-image: url(start.png);list-style-position: inside;}
+                    </li>
+                    <li>a:visited {color : gray;} </li>
+                    <li>section h1 {padding: 1em 0.5em 2em;}
+                    </li>
+                    <li>figure {margin-left: 20px;}
+                    </li>
+                    <li>The first line of the first paragraph that's within the element id = "top"
+                    </li>
+                    <li>All image elements that have the usemap attribute within the div element belonging to the Links class.
+                    </li>
+                    <li>p.Review::before {content: "***";}
+                    </li>
+                    <li>quotes:"\&#2018;" "\&#2019;"</li>
+                </ol>
+            </p>
+        </article>
+    </body>
+</html>
