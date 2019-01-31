@@ -1,0 +1,57 @@
+Session 3.1 Quick Check
+1. Provide the style rule to display all hypertext links within a navigation list as block
+elements with a gray background.
+2. Briefly describe the three types of page layouts.
+3. Provide a style rule to set the width of the page body to 90% of the browser
+window ranging from 320 pixels up to 960 pixels.
+4. Provide a style rule to horizontally center the header element within the body
+element. Assume that the header is a direct child of the page body.
+5. Provide a style rule to set the width of the aside element to 240 pixels and to
+float on the right margin of its container.
+6. Provide a style rule to display the footer element only after all floated elements
+have cleared.
+7. Your layout has four floated elements in a row but unfortunately the last element
+has wrapped to a new line. What is the source of the layout mistake?
+8. Provide a style rule to change the width property for the header element so that
+it measures the total width of the header content, padding, and border spaces.
+Include web extensions for older browsers.
+9. Provide a style rule to prevent the header element from collapsing around its
+floating content.
+
+Answers.
+1.nav a {
+	display: block;
+	background-color: gray;
+}
+2. 
+	Fixed:page size and page elements are fixed, using pixels as meausrement. 
+	Fluid:Sets width of page elemnts based on a percent of the width available.
+	Elastic:em measurements are used for all, and are based on the default font-size used in the webpage. 
+3.body{
+	min-width: 320px;
+	max-width: 960px;
+	width: 90%;	
+}
+4.body>header{
+	margin-left:auto;
+	margin-right:auto;
+}
+5.aside{
+	width:240px;
+	float:right;
+}
+6.footer{
+	clear:both;
+}
+7.The combined widths of the 4 floated elements exceeds the width of the container.
+8.header{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+9.header{
+	clear:both;
+	content:"";
+	display:table;
+}
+	
