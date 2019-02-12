@@ -1,0 +1,54 @@
+Quick Check 3.2
+1. What is the difference between a fixed grid and a fluid grid?
+2. What is a CSS framework?
+3. In a proposed grid, all of the grid rows have the class name container. Create a
+style rule to expand those grid rows around their floating columns.
+4. In a proposed grid, the columns all have the class names “span-integer” where
+integer indicates the size of the column. Create a style rule to float every grid
+column on the left margin.
+5. Create a style rule to set the width of columns belonging to the span-4 class to
+25% of the row width.
+6. What is lorem ipsum?
+7. Create a style rule for the grid rows described in question 3 above so that their
+sizes are measured using the Border Box model.
+8. Create a style that adds a 2 pixel green dotted outline around all block quotes
+in the document.
+9. Using the proposed specifications for CSS-based grids, create a grid for the body
+element that has three rows with heights automatically defined by the page content
+and five columns with widths of 25%, 2.5%, 50%, 2.5%, and 20%. Place the nav
+element in the first column, the article element in the third column, and the
+aside element in the fifth column.
+
+
+Answers
+1. Fixed: Widths of columns and margins are specified by pixels, therefore all columns have a fixed width. It is
+	based on a page width of 960px.S
+   Fluid: Widths of columns are expressed in percentages ather than pixels, to account for different page widths. This one
+	is more adaptive.  
+
+2.A software package that gives a library of tools to design your website. (Bootstrap).
+
+3. div.container{content: '';
+		display: table;
+		clear: both;}
+
+4.div[class^+'span-'] {float: left;}
+
+5.div.span-4{width: 25%;}
+
+6.A placeholder text of nonsensical latin used to test webpages.
+
+7.div.container, div[class^='span-']{-webkit-box-sizing: border-box;
+					-moz-box-sizing: border-box;
+					box-sizing: border-box;}
+
+8. blockquote {outline: 2px dotted green;}
+
+9. body {display: grid;
+	grid-template-rows: auto auto auto;	
+	grid-template-columns: 25% 2.5% 50% 2.5% 20%;}
+   
+   nav {grid-column: 1;}
+   article {grid-column: 3;}
+   aside{grid-column: 5;}
+	
