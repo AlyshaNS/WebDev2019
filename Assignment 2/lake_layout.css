@@ -21,7 +21,7 @@ body {
 }
 
 body > header > img {
-	width: 100%;
+	width: 94%;
 	display: block;
 	margin: 0;
 }
@@ -30,13 +30,13 @@ body > section#leftcol {
 	width: 70%;
 	float: left;
 	margin-left: 0%;
-	margin-right: 4%;
+	margin-right: 0%;
 }
 
 body > section#rightcol {
 	width: 24%;
 	float: left;
-	margin-right: 2%;
+	margin-right: 0%;
 }
 
 footer {
@@ -58,7 +58,7 @@ li, main, nav, ol, p, section, span, ul {
 
 header > nav {
 	display: table;
-	width: 100%;
+	width: 94%;
 }
 
 header > nav > ul {
@@ -92,4 +92,3 @@ section#leftcol img {
 	width: 100%;
 	display: block;
 }
-
