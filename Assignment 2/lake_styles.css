@@ -28,6 +28,7 @@ html{
 /*SECTION LEFTCOL*/
 section#leftcol {
    background-color: rgb(248, 246, 226);
+
 }
 section#leftcol > h1{
    font-family: Dobkin;
