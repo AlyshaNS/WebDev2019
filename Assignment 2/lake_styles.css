@@ -33,6 +33,11 @@ section#leftcol {
 section#leftcol > h1{
    font-family: Dobkin;
    font-size: 3em;
+   padding-left: 15px;
+}
+
+section#leftcol p {
+   padding-left: 10px;
 }
 
 /*NAV TOP*/
@@ -82,6 +87,10 @@ aside#notes > h1{
    font-size: 1.5em;
    text-align: center;
    font-weight: normal;
+}
+
+aside#events h2 {
+   padding-left: 10px;
 }
 
 
