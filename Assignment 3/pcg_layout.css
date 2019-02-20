@@ -1,10 +1,12 @@
 @charset "utf-8";
 
+
 body {
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1024px;
 	min-width: 768x;
+	
 }
 
 body > header > img {
@@ -14,21 +16,26 @@ body > header > img {
 }
 
 body > section#leftcol {
-	width: 70%;
+	width: 25%;
 	float: left;
 	margin-left: 0%;
 	margin-right: 0%;
+	padding-left: 15px;
+	padding-right: 15px;
+	height: 117vh; /*css hack! fix later. */
 }
 
 body > section#rightcol {
-	width: 24%;
+	width: 75%;
 	float: left;
 	margin-right: 0%;
+	padding-left: 20px;
+	padding-right: 20px;
 	height: 117vh; /*css hack! fix later. */
 }
 
 footer {
-	width: 94%;
+	width: 100%;
     clear: both;
 }
 
