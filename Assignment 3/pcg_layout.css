@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+body {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1024px;
+	min-width: 768x;
+}
+
+body > header > img {
+	width: 100%;
+	display: block;
+	margin: 0;
+}
+
+body > section#leftcol {
+	width: 70%;
+	float: left;
+	margin-left: 0%;
+	margin-right: 0%;
+}
+
+body > section#rightcol {
+	width: 24%;
+	float: left;
+	margin-right: 0%;
+	height: 117vh; /*css hack! fix later. */
+}
+
+footer {
+	width: 94%;
+    clear: both;
+}
+
+address, article, aside, blockquote, body, cite, 
+div, dl, dt, dd, em, figcaption, figure, footer, 
+h1, h2, h3, h4, h5, h6, header, html, img, 
+li, main, nav, ol, p, section, span, ul {
+
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;  
+}
