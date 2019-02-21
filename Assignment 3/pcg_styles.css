@@ -32,7 +32,7 @@ section#rightcol img{
    height: 150px;
    float: right;
    text-align: center;
-   margin-bottom: 15px;
+   padding-bottom: 30px;
 }
 
 section#rightcol p{
@@ -55,7 +55,7 @@ footer{
 }
 
 a:link{
-   color: black;
+   color:darkblue;
    text-decoration: none;
 }
 a:hover{
