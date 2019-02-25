@@ -33,6 +33,7 @@ section#rightcol img{
    float: right;
    text-align: center;
    padding-bottom: 30px;
+   display: block;
 }
 
 section#rightcol p{

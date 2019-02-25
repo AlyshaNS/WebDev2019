@@ -3,9 +3,11 @@
 
 body {
 	margin: 0 auto;
+	padding: 0 auto;
 	width: 100%;
 	max-width: 1024px;
 	min-width: 768x;
+	display: block;
 	
 }
 
@@ -22,7 +24,7 @@ body > section#leftcol {
 	margin-right: 0%;
 	padding-left: 15px;
 	padding-right: 15px;
-	height: 117vh; /*css hack! fix later. */
+	height: 117vh; /*width will be determined automatically*/
 }
 
 body > section#rightcol {
@@ -31,12 +33,12 @@ body > section#rightcol {
 	margin-right: 0%;
 	padding-left: 20px;
 	padding-right: 20px;
-	height: 117vh; /*css hack! fix later. */
+	height: 117vh; /*width will be determined automatically*/
 }
 
 footer {
 	width: 100%;
-    clear: both;
+    clear: both; /*to move this away from the floated elemnts into its own thing */
 }
 
 address, article, aside, blockquote, body, cite, 
