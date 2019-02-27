@@ -18,6 +18,34 @@ html{
    background-image: url("paper2.jpg");
 }
 
+/*Leftcol*/
+section#leftcol{
+   background-color:rgb(231, 231, 216);
+   background-color: hsl(60, 24%, 88%);
+}
+
+section#leftcol h2{
+   text-align:right;
+
+}
+
+
+/*Footer*/
+footer{
+   text-align: center;
+   background-color:black;
+   background-color:hsl(0, 0%, 0%);
+   color: white;
+   color: hsl(0, 0%, 100%);
+}
+
+footer a:link{
+   color: crimson;
+   color: hsl(348, 83%, 47%);
+}
+
+
+/*Rightcol*/
 section#rightcol {
    background-color: rgb(231, 231, 216);
    background-color: hsl(60, 24%, 88%);
@@ -40,36 +68,25 @@ section#rightcol p{
    text-align: justify;
 }
 
-section#leftcol{
-   background-color:rgb(231, 231, 216);
-   background-color: hsl(60, 24%, 88%);
-}
-
-section#leftcol h2{
-   text-align:center;
-}
-
-footer{
-   text-align: center;
-   background-color:black;
-   color: white;
-}
-
 a:link{
    color:darkblue;
+   color:hsl(240, 100%, 27%);
    text-decoration: none;
 }
 a:hover{
    color: blue;
+   color: hsl(240, 100%, 50%);
    text-decoration: none;
 }
 
 a:active{
    color:rgb(90, 3, 90);
+   color:hsl(300, 94%, 18%);
    text-decoration: none;
 }
 
 ul{
    list-style: none;
+   text-align: right;
 
 }
