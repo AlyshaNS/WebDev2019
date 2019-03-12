@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+body{
+    margin: 0 auto;
+	padding: 0 auto;
+	width: 100%;
+	max-width: 1024px;
+	min-width: 768x;
+	position: absolute;
+	right: 10px;
+	left: 10px;	
+}
+
+body > header > img {
+	width: 100%;
+	display: block;
+	margin: 0;
+	position: relative;
+}
+
+section#col_one{
+    width: 20%;
+    float: left;
+}
+
+section#col_two{
+    width: 80%;
+    float: left;
+}
+
+section#col_two h1, section#col_two h3{
+    text-align: center;
+}
+
+footer {
+	width: 100%;
+    clear: both; /*to move this away from the floated elemnts into its own thing */
+    text-align: center;
+}
