@@ -1,0 +1,63 @@
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 6
+   Case Problem 4
+
+   Schedule Table Style Sheet
+   Author: Alysha Rogers
+   Date:   20190322
+
+   Filename:         hcc_schedule.css
+   Supporting Files: 
+
+*/
+
+table, th, td{
+   border: 1px solid black;
+   border-collapse: collapse;
+}
+
+tbody td{
+   text-align: center;
+}
+
+#schedule thead th, #capacity thead th{
+   background-color: #88cae9;
+   color: black;
+}
+
+#schedule tbody th, #capacity tbody th{
+   background-color: #88cae9;
+   text-align: left;
+}
+
+/* -- #schedule -- */
+
+#schedule{
+   width: 100%;
+}
+
+#schedule caption{
+   text-align: left;
+}
+
+#schedule thead th{
+   width: 50px;
+}
+
+#schedule tbody th{
+   width: 125px;
+}
+
+.noVacancy{
+   background-color: #9e9e9e;
+}
+
+.vacancy{
+   background-color:rgb(245, 245, 112);
+}
+
+/* -- #capacity -- */
+#capacity{
+  width: 100%;
+}
