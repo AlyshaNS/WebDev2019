@@ -30,11 +30,7 @@ ul > li{
    text-align: center;
 }
 
-a.button {
-   -webkit-appearance: button;
-   -moz-appearance: button;
-   appearance: button;
-
+a {
    text-decoration: none;
    color: initial;
 }
@@ -116,9 +112,13 @@ footer a{
    color: black;
 }
 
-reservations p{
+#reservations p{
    padding: 2%;
-   text-align: justify;
-   text-justify: auto;
-   font-size: 18px;
+   text-align: center;
+   font-size: 19px;
+}
+
+caption{
+  font-size: 0.8em;
+  font-style: italic;
 }
