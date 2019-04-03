@@ -14,6 +14,13 @@
     padding-right: 40px;
   }
 
+  #awards{
+    font-size: 1.1em;
+  }
+
+  #interests{
+    font-size: 1.1em;
+  }
   /* Stuff I added */
   
   @media (min-width: 992px) {
@@ -76,7 +83,7 @@
   }
   
   #sideNav .navbar-toggler:focus {
-    outline-color: #d48a6e;
+    outline-color: red;
   }
   
   @media (min-width: 992px) {
@@ -162,7 +169,7 @@
   }
   
   .bg-primary {
-    background-color: #BD5D38 !important;
+    background-color: red !important;
   }
   
   .text-primary {
@@ -171,8 +178,6 @@
   
   a {
     color: #868e96;
-  }
-  
   }
   
   a:hover, a:focus, a:active {
@@ -229,7 +234,7 @@
     margin-right:0
   }
   .social-icons a:hover{
-    background-color:#bd5d38
+    background-color:rgba(155, 20, 20, 0.966)
   }
   .dev-icons{
     font-size:3rem
@@ -299,12 +304,14 @@
     }
    section.resume-section .resume-item .resume-date{
      min-width:none
+
   }
   @media (min-width:768px)
   {
     section.resume-section
     {
-    min-height:100vh
+    min-height:100vh;
+    padding-left: 40px;;
     }
     section.resume-section .resume-item .resume-date{min-width:18rem}
   }
@@ -316,15 +323,15 @@
     }
   }
   .bg-primary{
-    background-color:#bd5d38!important
+    background-color:rgba(155, 20, 20, 0.966)!important
   }
   .text-primary{
-    color:#bd5d38!important
+    color:rgba(155, 20, 20, 0.966)!important
   }
   a{
-    color:#bd5d38
+    color:rgba(155, 20, 20, 0.966)
   }
   a:active,a:focus,a:hover{
-    color:#824027
+    color:rgba(155, 20, 20, 0.966)
   }
   
