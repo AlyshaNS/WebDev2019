@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head><title>Cool Calc</title>
+<head><title>Calculator</title>
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <style>
 #display
 {
 	background-color: black;
-	color: #53f442;
-	font-face: courier;
+	color: red;
+	font-family: courier;
 	width: 300px;
 	height: 35px;
 	margin-bottom: 10px;
@@ -19,65 +19,100 @@
 
 <div id="display"></div>
 <p>
-<div class="btn btn-primary" id="num1">1</div>
-<div class="btn btn-primary" id="num2">2</div>
-<div class="btn btn-primary" id="num3">3</div>
+	<div class="btn btn-primary" id="num">1</div>
+	<div class="btn btn-primary" id="num">2</div>
+	<div class="btn btn-primary" id="num">3</div>
+	<div class="btn btn-primary" id="minus">-</div>
 </p>
 
 <p>
-<div class="btn btn-primary" id="num4">4</div>
-<div class="btn btn-primary" id="num5">5</div>
-<div class="btn btn-primary" id="num6">6</div>
+	<div class="btn btn-primary" id="num">4</div>
+	<div class="btn btn-primary" id="num">5</div>
+	<div class="btn btn-primary" id="num">6</div>
+	<div class="btn btn-primary" id="plus">+</div>
 </p>
 
 <p>
-<div class="btn btn-primary" id="num7">7</div>
-<div class="btn btn-primary" id="num8">8</div>
-<div class="btn btn-primary" id="num9">9</div>
+	<div class="btn btn-primary" id="num">7</div>
+	<div class="btn btn-primary" id="num">8</div>
+	<div class="btn btn-primary" id="num">9</div>
+	<div class="btn btn-primary" id="multiply">*</div>
 </p>
 
 <p>
-<div class="btn btn-primary" id="minus">-</div>
-<div class="btn btn-primary" id="plus">+</div>
-<div class="btn btn-primary" id="multiply">*</div>
+	<div class="btn btn-primary" id="equals">=</div>
+	<div class="btn btn-primary" id="clear">C</div>
+	<div class="btn btn-primary" id="decimal">.</div>
+	<div class="btn btn-primary" id="divide">/</div>
 </p>
 
 <p>
-<div class="btn btn-primary" id="divide">/</div>
-<div class="btn btn-primary" id="equals">=</div>
-<div class="btn btn-primary" id="delete">D</div>
+	<div class="btn btn-primary" id="delete">Delete</div>
 </p>
 
 <script>
 let currentCalc = "";
 
-let num_btn1 = document.querySelector("#num1");
-
+let num_btn = document.querySelectorAll("#num");
 let plus_btn = document.querySelector("#plus");
 let equals_btn = document.querySelector("#equals");
+let minus_btn = document.querySelector("#minus");
+let divide_btn = document.querySelector("#divide");
+let mutliply_btn = document.querySelector("#multiply");
+let display = document.querySelector("#display");
+let delete_btn = document.querySelector("#delete");
+let decimal_btn = document.querySelector("#decimal");
+let C_btn = document.querySelector("#clear");
 
 
-num_btn.addEventListener("click",
-function (e)
-{
+num_btn.forEach(function(x){
+x.addEventListener("click", function (e){
 	currentCalc = currentCalc + e.target.textContent;
-	let disp = document.querySelector("#display");
-	disp.textContent = currentCalc;
+	display.textContent = currentCalc;
+	})
 });
 
-plus_btn.addEventListener("click",
-function (e)
-{
-	currentCalc = currentCalc + e.target.textContent;
-	console.log(currentCalc);
+decimal_btn.addEventListener("click", function (e) {
+    currentCalc = currentCalc + e.target.textContent;
+    display.textContent = currentCalc;
 });
 
-equals_btn.addEventListener("click",
-function (e)
+C_btn.addEventListener("click", function (e) {
+    currentCalc = "";
+    display.textContent = currentCalc;
+});
+
+delete_btn.addEventListener("click", function(e){
+        currentCalc = currentCalc.substring(0, currentCalc.length - 1)
+        display.textContent = currentCalc; 
+    })
+
+plus_btn.addEventListener("click", function (e)
 {
-	let disp = document.querySelector("#display");
-	disp.textContent = eval(currentCalc);
+	currentCalc = currentCalc + e.target.textContent;
+	display.textContent = (currentCalc);
+});
+
+equals_btn.addEventListener("click", function (e)
+{
+	display.textContent = eval(currentCalc);
 	currentCalc = "";
+});
+
+minus_btn.addEventListener("click", function (e) {
+    currentCalc = currentCalc + e.target.textContent;
+    display.textContent = currentCalc;
+});
+
+mutliply_btn.addEventListener("click", function (e) {
+    currentCalc = currentCalc + e.target.textContent;
+    display.textContent = currentCalc;
+});
+
+
+divide_btn.addEventListener("click", function (e) {
+    currentCalc = currentCalc + e.target.textContent;
+    display.textContent = currentCalc;
 });
 
 

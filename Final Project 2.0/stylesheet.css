@@ -6,12 +6,12 @@
 
   /* Stuff I added */
   .navbar-nav li a{
-      color: black;
+      color: rgb(241, 115, 115);
       text-decoration: none;
   }
 
   .navbar-nav{
-    padding-right: 40px;
+    padding-right: 50px;
   }
 
   #awards{
@@ -20,6 +20,22 @@
 
   #interests{
     font-size: 1.1em;
+  }
+
+  #interests img{
+    height: 250px;
+    width: 250px;
+    margin: 50px;
+    border: 10px solid rgb(178, 73, 73);
+  }
+
+  #contact img{
+    height: 300px;
+    width: 175px;
+    float:left;
+  }
+  #contact a{
+    text-decoration: none;
   }
   /* Stuff I added */
   
@@ -171,11 +187,7 @@
   .bg-primary {
     background-color: red !important;
   }
-  
-  .text-primary {
-    color: #BD5D38 !important;
-  }
-  
+
   a {
     color: #868e96;
   }
