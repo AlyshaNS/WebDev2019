@@ -38,6 +38,10 @@
     font-size: 1.1em;
   }
 
+  #about a{
+    text-decoration: none;
+  }
+
   /* End Stuff I added */
   
   @media (min-width: 992px) {
