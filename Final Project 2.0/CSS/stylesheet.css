@@ -4,6 +4,10 @@
   }
 
   /* Stuff I added */
+  .galleria{
+    max-width: 700px; height: 400px; background: #000
+  }
+
   .navbar-nav li a{
       color: rgb(241, 115, 115) !important;
       text-decoration: none;

@@ -11,6 +11,12 @@
   <title>Alysha Rogers</title>
   <link href="/WebDev2019/Final Project 2.0/CSS/stylesheet.css" rel="stylesheet">
 
+
+  <!-- Galleria 
+  https://galleria.io/-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+  <script src="/WebDev2019/Final Project 2.0/JS/galleria-1.5.7.js"></script>
+
   <!-- Custom fonts for this template -->
   <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
@@ -50,6 +56,9 @@
         </li><br>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#goals">Goals</a>
+        </li><br>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#workSamples">Work Samples</a>
         </li><br>
         <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -232,7 +241,7 @@
         <h2 class="mb-5">Interests</h2>
         <img id = "books"  src="/WebDev2019/Final Project 2.0/Photos/Open-Book.jpg" alt="Books">
         <img id = "films" src="/WebDev2019/Final Project 2.0/Photos/popcorn.jpg" alt="Films">
-        <img if = "food" src="/WebDev2019/Final Project 2.0/Photos/fine dining.jpg" alt="Food">
+        <img id = "food" src="/WebDev2019/Final Project 2.0/Photos/fine dining.jpg" alt="Food">
         <p id ='interests'>Apart from being a budding IT professional, my favorite things in life are reading books 
           (Tolkien's Legendarium being my favorite), watching all sorts of movies, and enjoying good food.</p>
       </div>
@@ -275,6 +284,23 @@
             <li><i class="far fa-check-circle"></i> Get a Corgi (her name will be Chandler) after Toto passes</li>
         </ul>
       </div>
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="workSamples">
+        <h2 class="mb-5">Work Samples</h2>
+      <div class = "galleria">
+        <img src= "/WebDev2019/Final Project 2.0/Photos/Battleship 1.jpeg" alt="">
+        <img src="/WebDev2019/Final Project 2.0/Photos/Battleship 2.jpeg" alt="">
+        <img src="/WebDev2019/Final Project 2.0/Photos/Battleship 3.jpeg" alt="">
+        <img src="/WebDev2019/Final Project 2.0/Photos/Battleship 4.jpeg" alt="">
+        <img src="/WebDev2019/Final Project 2.0/Photos/Lake.PNG" alt="">
+      </div>
+      <script>
+        (function() { 
+            Galleria.loadTheme("/WebDev2019/Final Project 2.0/JS/themes/classic/galleria.classic.min.js");
+            Galleria.run('.galleria');
+        }());
+      </script>
     </section>
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="contact">
